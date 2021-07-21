@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './ExpenseFilter.css';
 
 const ExpenseFilter = (props) => {
+    
     const dropdownChangeHandler = (event) => {
         
         props.onSaveSelectedYear(event.target.value);
